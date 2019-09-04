@@ -1,0 +1,112 @@
+
+SPĒLE GALVASPILSĒTU TESTS
+- spēle notiek failā spele_valstis.html
+- javascript/custom.js ir aktīvais kods kas darbina
+
+- custom.js kods kas darbina spēli
+----- masīvs 'valstis' = valsts1, valsts2...
+----- masīvs 'pilsetas_pareizas' = pilseta1, pilseta2...
+----- masīvs 'pilsetas_nepareizas' =
+
+----- mainīgais 'jautajums_paslaik' = 0
+kurš jautājums pašlaik tiek atbildēts (0 lidz 9)
+
+----- mainīgais 'punkti' = 0
+
+
+
+
+
+
+funkcija izveleties_tekstus() (funkcija sagatavo tekstus jautājumam un pogām)
+{
+-----jautajuma_teksts = Kāda ir (IELIEK PAŠREIZĒJĀ JAUTĀJUMA VALSTI) galvaspilstēta?
+
+-----masīvs pogas
+     (satur tekstus kas pogās jāliek)
+
+(sākumā katrai pogai nepareizu atbildi)
+(zemāk vienai pareizu ieliks)
+-----pogas[0] = pogai_nepareizu_abildi()
+-----pogas[1] = pogai_nepareizu_abildi()
+-----pogas[2] = pogai_nepareizu_abildi()
+
+
+-----pogas_nr_pareiza = random cipars 0 lidz 2
+     (izvēlas kurā no pogām likt pareizo atbildi, pirmajā, otrajā vai trešajā)
+
+
+-----masīvā 'pogas' pie izvēlētā cipara ieliek pareizo atbildi
+
+
+-----izsauc funkciju ielikt_tekstus_html(jautajums_teksts, pogas)
+}
+
+
+
+
+
+
+
+
+
+funkcija ielikt_tekstus_html( jautajums_teksts, pogas ) (saliek tekstus reāli lapā)
+{
+---ieliek html lapā pareizajās vietas tekstus
+---nomaina karoga bildi (karog bildes img mapē ar valstu nosaukumiem piem: Norvēģija.jpg)
+
+---katrai pogai pieliek ka klikšķinot izsauc funkciju 'parbaudit_atbildi( pilseta )'
+}
+
+
+
+
+
+
+
+funkcija parbaudit_atbildi( pilseta ) (šo izsauc kad nospiež pogu)
+{
+
+---if 'pilseta' == 'pilsetas_pareizas'(pašreizējo)
+   ja pašreizējā pareizā pilsēta ir vienāda ar uzspiesto pilsētu tad +1 punkts
+--------punkti+1
+--------parādam ziņu spēlētājam alert(Pareizi)
+
+---else (ja nav pareiza atbilde)
+--------parādam ziņu spēlētājam alert(Nepareizi)
+
+
+---izsauc nakamais_jautajums()
+
+}
+
+
+
+
+
+nakamais_jautajums() (parāda nākamo jautājum)
+{
+
+---jautajums_paslaik + 1
+
+---izsauc izveleties_tekstus() (sāk no sākuma nāk. jautājumam likt visu)
+
+---if jautajums_paslaik==10 (spēles beigas)
+------atver lapu spele_valstis_rezultati.html#7
+      (adrese beigās pieliek punktu skaitu, tā rezultātu lapa zin cik punkti)
+
+}
+
+
+
+
+funkcija pogai_nepareizu_abildi() (iedod nepareizu atbildi ko rādīt pogā)
+{
+no masīva 'pilsetas_nepareizas' izvēlas 
+random vienu pilsētu un to atgriež (return)
+}
+
+
+
+
+
