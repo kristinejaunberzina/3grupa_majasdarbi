@@ -114,27 +114,19 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 function parbaudit_atbildi(pilseta) //(šo izsauc kad nospiež pogu)
 {
     console.log( 'parbaudit_atbildi('+pilseta+')' );
-/*
----if 'pilseta' == 'pilsetas_pareizas'(pašreizējo)
-   ja pašreizējā pareizā pilsēta ir vienāda ar uzspiesto pilsētu tad +1 punkts
---------punkti+1
---------parādam ziņu spēlētājam alert(Pareizi)
-
----else (ja nav pareiza atbilde)
---------parādam ziņu spēlētājam alert(Nepareizi)
-
-
----izsauc nakamais_jautajums()*/
-
 
     if( pilseta == pilsetas_pareizas[jautajums_paslaik] ) //parbaudam vai pareiza atbilde
     {
-        alert(1);
+        alert('Pareizi');
+        punkti++; /************/ console.log('punkti='+punkti);
     }
-    else //nepareiza
+    else
     {
-        alert(0);
+        alert('Nepareizi');
     }
+
+
+    nakamais_jautajums();
 
 }
 
