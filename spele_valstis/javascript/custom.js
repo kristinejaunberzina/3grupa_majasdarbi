@@ -82,16 +82,15 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 
     document.getElementById('atbilde_0').innerHTML = pogas[0];
     document.getElementById('atbilde_0').value     = pogas[0];
-    document.getElementById('atbilde_0').onclick   = function() 
-                                                    { 
-                                                    parbaudit_atbildi( document.getElementById('atbilde_0').value );
-                                                    };
+    document.getElementById('atbilde_0').onclick   = function() { parbaudit_atbildi( document.getElementById('atbilde_0').value ); };
     //
     document.getElementById('atbilde_1').innerHTML = pogas[1];
     document.getElementById('atbilde_1').value     = pogas[1];
+    document.getElementById('atbilde_1').onclick   = function() { parbaudit_atbildi( document.getElementById('atbilde_1').value ); };
     //
     document.getElementById('atbilde_2').innerHTML = pogas[2];
-    document.getElementById('atbilde_2').value     = pogas[2];    
+    document.getElementById('atbilde_2').value     = pogas[2];
+    document.getElementById('atbilde_2').onclick   = function() { parbaudit_atbildi( document.getElementById('atbilde_2').value ); };    
 
 }
 
