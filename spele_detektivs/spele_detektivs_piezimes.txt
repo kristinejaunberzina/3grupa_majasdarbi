@@ -14,13 +14,18 @@ SPELE DETEKTIVS
 - javascript/punktu_skaititajs.js (skaita punktus - saistīts ar katru skatu)
 
 SPĒLES SECĪBA
-- katrā skatā ir vairāki uzdevumi
-- par izdarītu uzdevumu saņem 1 punktu 
+- katrā skatā ir uzdevums
+- par izdarītu uzdevumu saņem punktus (ar funkciju pieskaitit_punktus(nr)  ) 
 - spēlētājs var neizdarīt visus uzdevumus un pāriet uz nākamo skatu
 - uz iepriekšējo skatu nevar aiziet (ja varētu - grūtāk punktus skaitīt)
 - beigās parāda cik punktus sakrājis spēlētājs
 
 - punkti tiek skaititi adresei pieliekot beigas '#'+cipars (piem: skats2.html#7 )
+
+
+
+
+
 
 zemāk aprakstīts fails
 punktu_skaititajs.js---------------------------------------------
@@ -28,7 +33,7 @@ punktu_skaititajs.js---------------------------------------------
 
 var punkti
 
-function pielikt_punktus(nr)
+function pieskaitit_punktus(nr)
 
 function nakamais_skats()
 
