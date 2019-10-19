@@ -143,7 +143,7 @@ function parbaudit_atbildi(pilseta) //(šo izsauc kad nospiež pogu)
 
 
 
-function nakamais_jautajums() //(parāda nākamo jautājum)
+function nakamais_jautajums() //sagatavo nākamā jautājuma rādīšanai
 {
 /*
 ---jautajums_paslaik + 1
@@ -154,7 +154,29 @@ function nakamais_jautajums() //(parāda nākamo jautājum)
 ------atver lapu spele_valstis_rezultati.html#7
       (adrese beigās pieliek punktu skaitu, tā rezultātu lapa zin cik punkti)*/
 
+      jautajums_paslaik++; /***********/ console.log('jautajums_paslaik='+jautajums_paslaik);
+
+
+      if( jautajums_paslaik >= 10 ) //jautajumi beigušies
+      {
+        window.location = 'spele_valstis_rezultati.html#7';
+      }
+      else //vēl nav pēdējais jautājums
+      {
+        izveleties_tekstus();
+      }
+      
+
+
 }
+
+
+
+
+
+
+
+
 
 
 
