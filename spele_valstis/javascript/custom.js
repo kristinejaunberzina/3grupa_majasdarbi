@@ -71,6 +71,10 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 ---nomaina karoga bildi (karog bildes img mapē ar valstu nosaukumiem piem: Norvēģija.jpg)
 
 ---katrai pogai pieliek ka klikšķinot izsauc funkciju 'parbaudit_atbildi( pilseta )'*/
+
+    document.getElementById('jautajuma_nr').innerHTML = 'Jautājums '+(jautajums_paslaik+1)+' no 10';
+
+    document.getElementById('teksts').innerHTML = jautajums_teksts;
 }
 
 
