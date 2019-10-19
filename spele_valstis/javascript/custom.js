@@ -72,9 +72,13 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 
 ---katrai pogai pieliek ka klikšķinot izsauc funkciju 'parbaudit_atbildi( pilseta )'*/
 
-    document.getElementById('jautajuma_nr').innerHTML = 'Jautājums '+(jautajums_paslaik+1)+' no 10';
+    document.getElementById('karogs').src='img/'+valstis[jautajums_paslaik]+'.jpg';
 
-    document.getElementById('teksts').innerHTML = jautajums_teksts;
+    document.getElementById('punkti').innerHTML = 'Iegūtie punkti '+punkti;
+
+    document.getElementById('jautajuma_nr').innerHTML = 'Jautājums '+(jautajums_paslaik+1)+' no 10'; //jautājuma nr parāda
+
+    document.getElementById('teksts').innerHTML = jautajums_teksts; //jautājuma tekstu ieliek
 }
 
 
