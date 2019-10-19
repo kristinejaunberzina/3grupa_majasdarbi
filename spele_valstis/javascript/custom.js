@@ -126,7 +126,26 @@ function parbaudit_atbildi(pilseta) //(šo izsauc kad nospiež pogu)
 
 ---izsauc nakamais_jautajums()*/
 
+
+    if( pilseta == pilsetas_pareizas[jautajums_paslaik] ) //parbaudam vai pareiza atbilde
+    {
+        alert(1);
+    }
+    else //nepareiza
+    {
+        alert(0);
+    }
+
 }
+
+
+
+
+
+
+
+
+
 
 
 
