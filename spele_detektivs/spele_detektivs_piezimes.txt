@@ -26,10 +26,15 @@ zemāk aprakstīts fails
 punktu_skaititajs.js---------------------------------------------
 
 
-var punkti = 0
+var punkti
 
-function 
+function pielikt_punktus(nr)
+
+function nakamais_skats()
+
+function paradit_punktus()
 
 
-te beidzas
+
+
 punktu_skaititajs.js---------------------------------------------
