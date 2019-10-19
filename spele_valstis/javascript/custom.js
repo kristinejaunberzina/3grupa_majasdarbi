@@ -82,6 +82,10 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 
     document.getElementById('atbilde_0').innerHTML = pogas[0];
     document.getElementById('atbilde_0').value     = pogas[0];
+    document.getElementById('atbilde_0').onclick   = function() 
+                                                    { 
+                                                    parbaudit_atbildi( document.getElementById('atbilde_0').value );
+                                                    };
     //
     document.getElementById('atbilde_1').innerHTML = pogas[1];
     document.getElementById('atbilde_1').value     = pogas[1];
@@ -110,6 +114,7 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 
 function parbaudit_atbildi(pilseta) //(šo izsauc kad nospiež pogu)
 {
+    console.log( 'parbaudit_atbildi('+pilseta+')' );
 /*
 ---if 'pilseta' == 'pilsetas_pareizas'(pašreizējo)
    ja pašreizējā pareizā pilsēta ir vienāda ar uzspiesto pilsētu tad +1 punkts
