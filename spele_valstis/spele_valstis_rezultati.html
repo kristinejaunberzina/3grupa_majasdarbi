@@ -19,10 +19,13 @@
             <img src="img/ievads.jpg" />
 
             <p>
-                Pareizas atbildes
+                Pareizas atbildes:
                 <span id="punkti">X</span>
                 <script>
-                document.getElementById('punkti').innerHTML = window.location.hash;
+                var punkti = window.location.hash;
+                punkti = punkti.substr(1, 2);
+
+                document.getElementById('punkti').innerHTML = punkti;
                 </script>
             </p>
 
