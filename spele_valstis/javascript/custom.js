@@ -1,4 +1,4 @@
-var valstis = Array('valsts1','valsts2','valsts3','valsts4','valsts5');
+var valstis = Array('valsts0','valsts1','valsts2','valsts3','valsts4','valsts5','valsts6','valsts7','valsts8','valsts9');
 
 var pilsetas_pareizas = Array('pilseta1','pilseta2','pilseta3','pilseta4','pilseta5');
 
@@ -59,6 +59,11 @@ ielikt_tekstus_html(jautajums_teksts, pogas);
 
 
 
+
+
+
+
+
 function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli lapā)
 {
 /*
@@ -67,6 +72,13 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
 
 ---katrai pogai pieliek ka klikšķinot izsauc funkciju 'parbaudit_atbildi( pilseta )'*/
 }
+
+
+
+
+
+
+
 
 
 
