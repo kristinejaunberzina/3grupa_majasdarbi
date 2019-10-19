@@ -1,6 +1,6 @@
 var valstis = Array('valsts0','valsts1','valsts2','valsts3','valsts4','valsts5','valsts6','valsts7','valsts8','valsts9');
 
-var pilsetas_pareizas = Array('pilseta1','pilseta2','pilseta3','pilseta4','pilseta5');
+var pilsetas_pareizas = Array('pilseta0','pilseta1','pilseta2','pilseta3','pilseta4','pilseta5','pilseta6','pilseta7','pilseta8','pilseta9');
 
 var pilsetas_nepareizas = Array('nepareiz_pilset1','nepareiz_pilset2','nepareiz_pilset3','nepareiz_pilset4');
 
