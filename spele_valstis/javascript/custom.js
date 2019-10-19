@@ -159,7 +159,7 @@ function nakamais_jautajums() //sagatavo nākamā jautājuma rādīšanai
 
       if( jautajums_paslaik >= 10 ) //jautajumi beigušies
       {
-        window.location = 'spele_valstis_rezultati.html#7';
+        window.location = 'spele_valstis_rezultati.html#'+punkti;
       }
       else //vēl nav pēdējais jautājums
       {
@@ -186,6 +186,12 @@ function pogai_nepareizu_abildi() //(iedod nepareizu atbildi ko rādīt pogā)
 /*
 no masīva 'pilsetas_nepareizas' izvēlas 
 random vienu pilsētu un to atgriež (return)*/
+    nepareizu_atbilzu_skaits = pilsetas_nepareizas.length;
+
+    rand_nr = Math.floor(Math.random() * nepareizu_atbilzu_skaits);
+
+    return pilsetas_nepareizas[rand_nr];
+
 }
 
 
