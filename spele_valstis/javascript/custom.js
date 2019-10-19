@@ -79,6 +79,16 @@ function ielikt_tekstus_html(jautajums_teksts, pogas) //(saliek tekstus reāli l
     document.getElementById('jautajuma_nr').innerHTML = 'Jautājums '+(jautajums_paslaik+1)+' no 10'; //jautājuma nr parāda
 
     document.getElementById('teksts').innerHTML = jautajums_teksts; //jautājuma tekstu ieliek
+
+    document.getElementById('atbilde_0').innerHTML = pogas[0];
+    document.getElementById('atbilde_0').value     = pogas[0];
+    //
+    document.getElementById('atbilde_1').innerHTML = pogas[1];
+    document.getElementById('atbilde_1').value     = pogas[1];
+    //
+    document.getElementById('atbilde_2').innerHTML = pogas[2];
+    document.getElementById('atbilde_2').value     = pogas[2];    
+
 }
 
 
