@@ -16,14 +16,24 @@
     <div id="wrap">
         <div id="main">
             
-            <h3>Paldies Detektīv Pūk!</h3>
-            <img src="img/puks.jpg" />
-
-            
+            <h3>Atrodi atšķirības!</h3>
+            <h4>4. uzdevums</h4>
             <div id="punkti">Punkti: 0</div>
             
-            <a href="index.html">Sākt no sākuma</a>
 
+            <!--saite uz nākamo skatu caur js jo jāpārceļ punkti uz nākamo skatu-->
+            <a onclick="nakamais_skats('rezultati.html')" id="nakamais">Nākamais uzdevums &gt;&gt;</a>
+            
+
+
+            <div id="game" style="position:relative;">
+                
+                <img src="img/skats_x.jpg" />
+                
+                <!--klikšķinot izsauc funkciju   pieskaitit_punktus(1)  -->
+                <div onclick="pieskaitit_punktus(1); this.style.opacity='0.7'; this.onclick='';" style="position: absolute; width: 107px; height: 145px; background: red; left: 457px; top: 148px; opacity:0.4; border-radius:70px"></div>
+            
+            </div>
 
 
 
