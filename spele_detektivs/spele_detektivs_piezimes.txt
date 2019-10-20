@@ -7,12 +7,6 @@ SPELE DETEKTIVS
 - skats4.html
 - rezultati.html (rāda punktus + poga 'sākt atkal')
 
-- javascript/skats1.js (katra skata javascript)
-- javascript/skats2.js
-- javascript/skats3.js
-- javascript/skats4.js
-- javascript/punktu_skaititajs.js (skaita punktus - saistīts ar katru skatu)
-
 
 SPĒLES SECĪBA
 - katrā skatā ir uzdevums
@@ -26,9 +20,8 @@ SPĒLES SECĪBA
 
 
 
-
-
-zemāk aprakstīts fails
+ar katru skatu saistīts fails punktu_skaititajs.js
+zemāk aprakstīts
 punktu_skaititajs.js---------------------------------------------
 
 
