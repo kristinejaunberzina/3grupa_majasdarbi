@@ -2,11 +2,13 @@
 <html lang="lv-LV">
 
 <head>
-    <title>Valstu spēle</title>
+    <title></title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/custom.css" media="screen" title="no title" charset="utf-8">
-    <meta charset="utf-8">
-
+    <style>
+    </style>
+    
 </head>
 
 <body>
@@ -14,22 +16,16 @@
     <div id="wrap">
         <div id="main">
             
-            <h1>Spēles rezultāti!</h1>
+            <h3>Paldies Detektīv Pūk!</h3>
+            <img src="img/puks.jpg" />
 
-            <img src="img/ievads.jpg" />
-
-            <p>
-                Pareizas atbildes:
-                <span id="punkti">X</span>
-                <script>
-                var punkti = window.location.hash;
-                punkti = punkti.substr(1, 2);
-
-                document.getElementById('punkti').innerHTML = punkti;
-                </script>
-            </p>
-
+            
+            <div id="punkti">Punkti: 0</div>
+            
             <a href="index.html">Sākt no sākuma</a>
+
+
+
 
         </div>
     </div>
@@ -40,5 +36,11 @@
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			  crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascript/skats4.js"></script>
+<script type="text/javascript" src="javascript/punktu_skaititajs.js"></script>
+<script>
+sakt_skaitit_punktus();
+</script>
+
 
 </html>

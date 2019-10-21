@@ -1,0 +1,43 @@
+
+SPELE DETEKTIVS
+- index.html (ievad skats)
+- skats1.html (skati ar uzdevumiem)
+- skats2.html
+- skats3.html
+- skats4.html
+- rezultati.html (rāda punktus + poga 'sākt atkal')
+
+
+SPĒLES SECĪBA
+- katrā skatā ir uzdevums
+- par izdarītu uzdevumu saņem punktus izsauc funkciju - pieskaitit_punktus(1) 
+- spēlētājs var neizdarīt visus uzdevumus un pāriet uz nākamo skatu
+- uz iepriekšējo skatu nevar aiziet (ja varētu - grūtāk punktus skaitīt)
+- beigās parāda cik punktus sakrājis spēlētājs
+
+- punkti tiek skaititi adresei pieliekot beigās '#'+cipars (piem: skats2.html#7 )
+
+
+
+
+ar katru skatu saistīts fails punktu_skaititajs.js
+zemāk aprakstīts
+punktu_skaititajs.js---------------------------------------------
+
+
+var punkti - mainīgais kur skaita punktus
+
+
+function pieskaitit_punktus(nr)
+----- pieliek punktus un izsauc paradit_punktus()
+
+function nakamais_skats() 
+------ izveido saiti uz nākamo skatu - pieliek adresei beigās #X  X=punkti 
+
+function paradit_punktus() 
+------ ieliek punktus redzamus lapā
+
+
+function sakt_skaitit_punktus()
+------ šo izsauc pirmo, nolasa punktus no adreses beigām #X un izsauc paradit_punktus()
+
