@@ -2,7 +2,7 @@ var valstis = Array('Austrija','Bulgārija','Horvātija','Latvija','Lielbritāni
 
 var pilsetas_pareizas = Array('Vīne','Sofija','Zagreba','Rīga','Londona','Mehiko','Oslo','Varšava','Madride','Berlīne');
 
-var pilsetas_nepareizas = Array('Hamburga','Barselona','Liona','Neapole');
+var pilsetas_nepareizas = Array('Hamburga','Barselona','Liona','Neapole','Parīze','Krakova','Viļņa');
 
 
 
