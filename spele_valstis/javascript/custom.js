@@ -2,7 +2,7 @@ var valstis = Array('Austrija','Bulgārija','Horvātija','Latvija','Lielbritāni
 
 var pilsetas_pareizas = Array('Vīne','Sofija','Zagreba','Rīga','Londona','Mehiko','Oslo','Varšava','Madride','Berlīne');
 
-var pilsetas_nepareizas = Array('Hamburga','Barselona','Liona','Neapole','Parīze','Krakova','Viļņa');
+var pilsetas_nepareizas = Array('Hamburga','Barselona','Liona','Neapole','Parīze','Krakova','Viļņa','Ļubļana','Bratislava');
 
 
 
@@ -31,6 +31,13 @@ var pogas = Array(); //(saturēs tekstus kas pogās jāliek)
 pogas[0] = pogai_nepareizu_abildi();
 pogas[1] = pogai_nepareizu_abildi();
 pogas[2] = pogai_nepareizu_abildi();
+//(ja būs 2 vienādi nosaukumi, tad mainīs uz Eindhovenu, Diseldorfu un random
+//visiem 3 nevajag, jo viens nosaukums pēc tām tiks nomainīts uz pareizo)
+if (pogas[0]===pogas[1] || pogas[0]===pogas[2] || pogas[1]===pogas[2]){
+pogas[0] = 'Eindhovena';
+pogas[1] = 'Diseldorfa';
+pogas[2] = pogai_nepareizu_abildi();
+}
 
 
 //(izvēlas kurā no pogām likt pareizo atbildi, pirmajā, otrajā vai trešajā)
