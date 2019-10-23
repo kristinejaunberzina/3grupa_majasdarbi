@@ -22,7 +22,7 @@ var punkti = 0;
 function izveleties_tekstus() //funkcija sagatavo tekstus jautājumam un pogām)
 {
 
-var jautajums_teksts = 'Kāda ir galvaspilsēta '+valstis[jautajums_paslaik]+'?'; /*(IELIEK PAŠREIZĒJĀ JAUTĀJUMA VALSTI) galvaspilstēta?*/ console.log('jautajums_teksts='+jautajums_teksts);
+var jautajums_teksts = 'Kāda ir  '+valstis[jautajums_paslaik]+'s galvaspilsēta ?'; /*(IELIEK PAŠREIZĒJĀ JAUTĀJUMA VALSTI) galvaspilstēta?*/ console.log('jautajums_teksts='+jautajums_teksts);
 
 var pogas = Array(); //(saturēs tekstus kas pogās jāliek)
 
