@@ -1,6 +1,19 @@
 Taisam repl.it projektu kas:
 
-1. Varēs saglabāt "spēlei detektīvs" un "valstu spēlei" rezultātus un spēlētāju vārdus
-2. Saglabās json formātā failos: "spele_detektivs.json" , "spele_valstis.json"
-3. Spēles komunicēs no github adreses: https://kristinejaunberzina.github.io/3grupa_majasdarbi/
+- Varēs saglabāt "spēlei detektīvs" un "valstu spēlei" punktus un spēlētāju vārdus
+- Saglabās json formātā failos: "spele_detektivs.json" , "spele_valstis.json"
+- Spēles komunicēs no github adreses: https://kristinejaunberzina.github.io/3grupa_majasdarbi/
 ar repl.it serveri https://rezultati-spelei.armandspucs.repl.co
+
+
+Spēļu darbības secība:
+
+1. Spēles beigās prasa vārdu
+2. Vārdu nosūta uz repl.it = izsauc adresi 
+2.1. https://rezultati-spelei.armandspucs.repl.co/detektivs?punkti=7&vards=Jānis
+2.2. https://rezultati-spelei.armandspucs.repl.co/valstis?punkti=7&vards=Jānis
+3. Repl.it saglabā saņemto (spele_detektivs.json , spele_valstis.json)
+
+4. Spēle pieprasa visus rezultatus - https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
+5. Repl.it parāda rezultātu faila saturu
+6. Spēle parāda rezultātus tabulā
