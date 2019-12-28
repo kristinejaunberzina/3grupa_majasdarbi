@@ -1,12 +1,17 @@
 <script>
     //xhttp request tests
     
+    function do_request()
+    {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://rezultati-spelei.armandspucs.repl.co", true);
     xhr.send();
     
     xhr.addEventListener("readystatechange", processRequest, false);
-    
+    }
+
+
+    do_request();
     
     
     function processRequest(e) {
