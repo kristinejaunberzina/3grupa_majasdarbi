@@ -17,3 +17,35 @@ Spēļu darbības secība:
 4. Spēle pieprasa visus rezultatus - https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
 5. Repl.it iedod rezultātu faila saturu
 6. Spēle parāda rezultātus tabulā
+
+
+
+--------------------------------------------------------------------------
+Abu spēļu beigu skatā vajadzēs aptuveni šādu js kodu kas saglabās un iegūs
+
+function rezultatus_saglabat(vards, punkti)
+{
+    nosūta rezultātu izmantojot xhttprequest funkciju uz adresi 
+    https://rezultati-spelei.armandspucs.repl.co/detektivs?punkti=7&vards=Jānis
+    vai
+    https://rezultati-spelei.armandspucs.repl.co/valstis?punkti=7&vards=Jānis
+
+    te pusparaugs kas strādā
+    https://kristinejaunberzina.github.io/3grupa_majasdarbi/request_test.html
+}
+
+
+function rezultatus_iegut()
+{
+    pieprasa rezultatuts https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
+
+    kad rezultati saņemti - izsauc func - paradit_rezultatus(request_event)
+
+    te pusparaugs kas strādā
+    https://kristinejaunberzina.github.io/3grupa_majasdarbi/request_test.html
+}
+
+function paradit_rezultatus(request_event)
+{
+    dekodē saņemtos json datus un saliek tabulā
+}
