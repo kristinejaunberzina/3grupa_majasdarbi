@@ -1,9 +1,10 @@
 <script>
     //xhttp request tests
-    
+
+    var xhr = new XMLHttpRequest();
+
     function do_request()
     {
-    var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://rezultati-spelei.armandspucs.repl.co", true);
     xhr.send();
     
