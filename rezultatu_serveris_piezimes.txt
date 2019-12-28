@@ -1,0 +1,6 @@
+Taisam repl.it projektu kas:
+
+1. Varēs saglabāt "spēlei detektīvs" un "valstu spēlei" rezultātus un spēlētāju vārdus
+2. Saglabās json formātā failos: "spele_detektivs.json" , "spele_valstis.json"
+3. Spēles komunicēs no github adreses: https://kristinejaunberzina.github.io/3grupa_majasdarbi/
+ar repl.it serveri https://rezultati-spelei.armandspucs.repl.co
