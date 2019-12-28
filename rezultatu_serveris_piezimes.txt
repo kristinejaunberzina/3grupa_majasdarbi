@@ -15,5 +15,5 @@ Spēļu darbības secība:
 3. Repl.it saglabā saņemto (spele_detektivs.json , spele_valstis.json)
 
 4. Spēle pieprasa visus rezultatus - https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
-5. Repl.it parāda rezultātu faila saturu
+5. Repl.it iedod rezultātu faila saturu
 6. Spēle parāda rezultātus tabulā
