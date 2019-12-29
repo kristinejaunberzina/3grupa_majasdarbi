@@ -12,7 +12,7 @@ Spēļu darbības secība:
 2. Vārdu nosūta uz repl.it = izsauc adresi 
 2.1. https://rezultati-spelei.armandspucs.repl.co/detektivs?punkti=7&vards=Jānis
 2.2. https://rezultati-spelei.armandspucs.repl.co/valstis?punkti=7&vards=Jānis
-3. Repl.it saglabā saņemto (spele_detektivs.json , spele_valstis.json)
+3. Repl.it saglabā saņemto (rezultati_detektivs.json , rezultati_valstis.json)
 
 4. Spēle pieprasa visus rezultatus - https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
 5. Repl.it iedod rezultātu faila saturu
@@ -48,4 +48,38 @@ function rezultatus_iegut()
 function paradit_rezultatus(request_event)
 {
     dekodē saņemtos json datus un saliek tabulā
+}
+
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+------------------------------------------------------------------
+Repl.it vajadzēs aptuveni šādu kodu
+
+
+Izveidot divas adreses (route):
+- /detektivs
+- /valstis
+
+
+Katras adreses (route) kods aptuveni:
+- ja parametri 'vards' un 'punkti' ir definēti (adreses beigās bija ?vards=Jānis&punkti=6 )
+------ izsauc func  rezultatus_pievienot_detektivs(vards,punkti)
+
+- ja parametrs 'rezultati' definēts
+------ izsauc func  rezultatus_iegut_detektivs()
+------ parāda ko func iedeva (json faila saturu)
+
+
+
+def rezultatus_pievienot_detektivs(vards,punkti)
+{
+    pieliek vārdu un punkti failā rezultati_detektivs.json
+}
+
+
+def rezultatus_iegut_detektivs()
+{
+    return atgriež faila rezultati_detektivs.json saturu
 }
