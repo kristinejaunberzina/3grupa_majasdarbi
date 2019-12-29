@@ -12,7 +12,7 @@ Spēļu darbības secība:
 2. Vārdu nosūta uz repl.it = izsauc adresi 
 2.1. https://rezultati-spelei.armandspucs.repl.co/detektivs?punkti=7&vards=Jānis
 2.2. https://rezultati-spelei.armandspucs.repl.co/valstis?punkti=7&vards=Jānis
-3. Repl.it saglabā saņemto (rezultati_detektivs.json , rezultati_valstis.json)
+3. Repl.it saglabā saņemto failos (rezultati_detektivs.json , rezultati_valstis.json)
 
 4. Spēle pieprasa visus rezultatus - https://rezultati-spelei.armandspucs.repl.co/detektivs?rezultati
 5. Repl.it iedod rezultātu faila saturu
