@@ -1,7 +1,11 @@
-<script>
-    //xhttp request tests
+<div id="rezultati">
+Šeit tiks ielādēti spēles rezultāti.
+</div>
+<input type="button" value="Pārlādēt rezultātus" onclick="rezultatus_iegut()" />
 
- 
+
+<script>
+    //rezultātu iegūšana zemāk
     var xhr = new XMLHttpRequest();
 
     
@@ -20,13 +24,23 @@
     function rezultatus_paradit(e) { //e satur saņemto info no repl.it servera
         if (xhr.readyState == 4 && xhr.status == 200) { //ja vispār kaut kas saņemts
             
-            console.log('No repl.it saņemts:');
-            console.log(xhr.responseText);
-
+            //rezultatus pārvērš JSON objektā
             var rezultati = JSON.parse(xhr.responseText);
-            alert(rezultati);
+
+            //visu liksim DIV
+            var rezultati_div = document.getElementById('rezultati');
+            rezultati_div.innerHTML = 'Spēles rezultāti:';
+
+            //loop rezultatus lai var parādīt lapā
+            for (i = 0; i < rezultati['rezultati'].length; i++) 
+            {
+                //liekam iekšā DIV
+                rezultati_div.innerHTML = rezultati_div.innerHTML + rezultati['rezultati'][i]['vards'];
+            }
+
+
         }
     }
     
-    //https://rezultati-spelei.armandspucs.repl.co
+
 </script>
