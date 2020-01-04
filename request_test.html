@@ -5,15 +5,32 @@
 
 
 <script>
-    //rezultātu iegūšana zemāk
-    var xhr = new XMLHttpRequest();
 
+    //iegūstam spēlētāja vārdu
+    var vards = prompt("Ievadet savu vārdu", "Tālis");
+
+
+    //http request objekti kas darīs komunikāciju ar repl.it
+    var xhr = new XMLHttpRequest();//rezultātu saņemšanai
+    var xhr2 = new XMLHttpRequest();//nosūtīšanai
+
+
+    //sākas rezultātu ierakstīšana
+    xhr2.open('GET', 'https://rezultati-spelei.armandspucs.repl.co/valstis?vards='+vards+'&punkti=19', true);
+    xhr2.send();
+
+    
+    confirm("Jūsu rezultāts ir saglabāts!");
+
+
+    //rezultātu iegūšana zemāk
     
     function rezultatus_iegut()
     {
     xhr.open('GET', "https://rezultati-spelei.armandspucs.repl.co/valstis", true);
     xhr.send();
     
+    //kad kaut kas iegūts no repl.it izsauc rezultatus_paradit(e) 
     xhr.addEventListener("readystatechange", rezultatus_paradit, false);
     }
 
@@ -21,7 +38,7 @@
     rezultatus_iegut();
     
     
-    function rezultatus_paradit(e) { //e satur saņemto info no repl.it servera
+    function rezultatus_paradit(e) { //e = info no repl.it server
         if (xhr.readyState == 4 && xhr.status == 200) { //ja vispār kaut kas saņemts
             
             //rezultatus pārvērš JSON objektā
@@ -41,9 +58,12 @@
                 rezultati_div.innerHTML = rezultati_div.innerHTML + ' ';
             }
 
-
         }
     }
-    
+    //////////////////////////////////////////
+    //beidzas rezultātu iegūšana
+
+  
+
 
 </script>
