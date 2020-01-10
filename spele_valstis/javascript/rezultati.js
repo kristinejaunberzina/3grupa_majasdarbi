@@ -43,17 +43,25 @@
 
             //visu liksim DIV
             var rezultati_div = document.getElementById('rezultati');
-            rezultati_div.innerHTML = 'Spēles rezultāti:';
+            rezultati_div.innerHTML = '<table>';
 
             //loop rezultatus lai var parādīt lapā
             for (i = 0; i < rezultati['rezultati'].length; i++) 
             {
                 //liekam iekšā DIV
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '<tr>';
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '<td>';
                 rezultati_div.innerHTML = rezultati_div.innerHTML + rezultati['rezultati'][i]['vards'];
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '</td>';
                 rezultati_div.innerHTML = rezultati_div.innerHTML + ' ';
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '<td>';
                 rezultati_div.innerHTML = rezultati_div.innerHTML + rezultati['rezultati'][i]['punkti'];
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '</td>';
+                rezultati_div.innerHTML = rezultati_div.innerHTML + '</tr>';
                 rezultati_div.innerHTML = rezultati_div.innerHTML + ' ';
             }
+
+            rezultati_div.innerHTML = rezultati_div.innerHTML + '</table>';
 
         }
     }
